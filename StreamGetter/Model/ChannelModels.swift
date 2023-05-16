@@ -7,6 +7,11 @@
 
 import Foundation
 
+/// JSONファイルのitemsをデコードした結果を保持する型
+struct ChannelResponse: Codable {
+    let items: [ChannelItem]
+}
+
 /// JSONファイルのitems.itemをデコードした結果を保持する型
 struct ChannelItem: Codable {
     let snippet: ChannelSnippet
