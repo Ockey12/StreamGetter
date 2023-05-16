@@ -14,6 +14,8 @@
 		AC46F0582A13978B00DCA267 /* ChannelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F0572A13978B00DCA267 /* ChannelModels.swift */; };
 		AC46F05B2A13B3B400DCA267 /* ApiKeyGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F05A2A13B3B400DCA267 /* ApiKeyGetter.swift */; };
 		AC46F05D2A13B3D100DCA267 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC46F05C2A13B3D100DCA267 /* Secrets.plist */; };
+		AC46F05F2A13B8FC00DCA267 /* ChannelRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F05E2A13B8FC00DCA267 /* ChannelRequester.swift */; };
+		AC46F0612A13BBB700DCA267 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F0602A13BBB700DCA267 /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		AC46F0572A13978B00DCA267 /* ChannelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModels.swift; sourceTree = "<group>"; };
 		AC46F05A2A13B3B400DCA267 /* ApiKeyGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyGetter.swift; sourceTree = "<group>"; };
 		AC46F05C2A13B3D100DCA267 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		AC46F05E2A13B8FC00DCA267 /* ChannelRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRequester.swift; sourceTree = "<group>"; };
+		AC46F0602A13BBB700DCA267 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				AC46F0572A13978B00DCA267 /* ChannelModels.swift */,
 				AC46F05A2A13B3B400DCA267 /* ApiKeyGetter.swift */,
+				AC46F05E2A13B8FC00DCA267 /* ChannelRequester.swift */,
+				AC46F0602A13BBB700DCA267 /* ApiError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 				AC46F0582A13978B00DCA267 /* ChannelModels.swift in Sources */,
 				AC46F0492A138F3200DCA267 /* StreamGetterApp.swift in Sources */,
 				AC46F05B2A13B3B400DCA267 /* ApiKeyGetter.swift in Sources */,
+				AC46F05F2A13B8FC00DCA267 /* ChannelRequester.swift in Sources */,
+				AC46F0612A13BBB700DCA267 /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
