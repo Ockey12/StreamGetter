@@ -89,3 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 DerivedData
+StreamGetter/Secrets.plist
