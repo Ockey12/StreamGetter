@@ -7,6 +7,21 @@
 
 import Foundation
 
+/// 1つのチャンネルの情報を保持する型
+struct Channel: Identifiable {
+    let id: String
+    let channelTitle: String
+    let description: String
+    let thumbnailURL: URL
+    
+    init(item: ChannelItem) {
+        self.id = item.snippet.channelId
+        self.channelTitle = item.snippet.channelTitle
+        self.description = item.snippet.description
+        self.thumbnailURL = URL(string: item.snippet.thumbnails.default.url)!
+    }
+}
+
 /// JSONファイルのitemsをデコードした結果を保持する型
 struct ChannelResponse: Codable {
     let items: [ChannelItem]
