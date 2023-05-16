@@ -11,6 +11,7 @@
 		AC46F04B2A138F3200DCA267 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F04A2A138F3200DCA267 /* ContentView.swift */; };
 		AC46F04D2A138F3300DCA267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC46F04C2A138F3300DCA267 /* Assets.xcassets */; };
 		AC46F0502A138F3300DCA267 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC46F04F2A138F3300DCA267 /* Preview Assets.xcassets */; };
+		AC46F0582A13978B00DCA267 /* ChannelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F0572A13978B00DCA267 /* ChannelModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC46F04A2A138F3200DCA267 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC46F04C2A138F3300DCA267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC46F04F2A138F3300DCA267 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC46F0572A13978B00DCA267 /* ChannelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AC46F0482A138F3200DCA267 /* StreamGetterApp.swift */,
 				AC46F04A2A138F3200DCA267 /* ContentView.swift */,
+				AC46F0562A13977E00DCA267 /* Model */,
 				AC46F04C2A138F3300DCA267 /* Assets.xcassets */,
 				AC46F04E2A138F3300DCA267 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				AC46F04F2A138F3300DCA267 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC46F0562A13977E00DCA267 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC46F0572A13978B00DCA267 /* ChannelModels.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC46F04B2A138F3200DCA267 /* ContentView.swift in Sources */,
+				AC46F0582A13978B00DCA267 /* ChannelModels.swift in Sources */,
 				AC46F0492A138F3200DCA267 /* StreamGetterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
