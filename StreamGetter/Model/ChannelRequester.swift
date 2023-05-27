@@ -8,7 +8,7 @@
 import Foundation
 
 struct ChannelRequester {
-    func searchChannels(channelKeyWord: String, completion: @escaping (Result<[Channel], Error>) -> Void) {
+    func searchChannels(channelKeyWord: String) async throws -> [Channel] {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "www.googleapis.com"
@@ -24,34 +24,26 @@ struct ChannelRequester {
         ]
         
         guard let url = components.url else {
-            completion(.failure(ApiError.invalidURL))
-            return
+            throw ApiError.invalidURL
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
             
-            guard let data = data else {
-                completion(.failure(ApiError.noData))
-                return
+#if DEBUG
+            guard let responsedJson = String(data: data, encoding: .utf8) else {
+                fatalError()
             }
+            print("--- searchChannels responsed JSON ---")
+            print(responsedJson)
+#endif
             
-            if let json = String(data: data, encoding: .utf8) {
-                print("Response JSON: \(json)")
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let response = try decoder.decode(ChannelResponse.self, from: data)
-                let channels = response.items.map(Channel.init)
-                completion(.success(channels))
-            } catch {
-                print("Decoding error: \(error)")
-                completion(.failure(error))
-            }
-        }.resume()
-    } // end func searchChannels
+            let decoder = JSONDecoder()
+            let response = try decoder.decode(ChannelResponse.self, from: data)
+            let channels = response.items.map(Channel.init)
+            return channels
+        } catch {
+            fatalError()
+        }
+    } // func searchChannels
 }
