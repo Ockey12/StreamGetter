@@ -9,7 +9,20 @@ import SwiftUI
 
 struct SearchChannelsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            let requester = ChannelRequester()
+            
+            Task {
+                do {
+                    _ = try await requester.searchChannels(channelKeyWord: "Polka Ch.")
+                } catch {
+                    fatalError(error.localizedDescription)
+                }
+            }
+        } label: {
+            Text("\"Polka Ch.\"でチャンネルを検索")
+        }
+
     }
 }
 
