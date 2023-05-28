@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2E86962A237F4D00595EDA /* SearchChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E86952A237F4D00595EDA /* SearchChannelsView.swift */; };
 		AC46F0492A138F3200DCA267 /* StreamGetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F0482A138F3200DCA267 /* StreamGetterApp.swift */; };
 		AC46F04B2A138F3200DCA267 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46F04A2A138F3200DCA267 /* ContentView.swift */; };
 		AC46F04D2A138F3300DCA267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC46F04C2A138F3300DCA267 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC2E86952A237F4D00595EDA /* SearchChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchChannelsView.swift; sourceTree = "<group>"; };
 		AC46F0452A138F3200DCA267 /* StreamGetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamGetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC46F0482A138F3200DCA267 /* StreamGetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamGetterApp.swift; sourceTree = "<group>"; };
 		AC46F04A2A138F3200DCA267 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC2E86942A237F2D00595EDA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				AC2E86952A237F4D00595EDA /* SearchChannelsView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		AC46F03C2A138F3200DCA267 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 				AC46F04A2A138F3200DCA267 /* ContentView.swift */,
 				AC46F05C2A13B3D100DCA267 /* Secrets.plist */,
 				AC46F0562A13977E00DCA267 /* Model */,
+				AC2E86942A237F2D00595EDA /* Test */,
 				AC46F04C2A138F3300DCA267 /* Assets.xcassets */,
 				AC46F04E2A138F3300DCA267 /* Preview Content */,
 			);
@@ -161,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2E86962A237F4D00595EDA /* SearchChannelsView.swift in Sources */,
 				AC46F04B2A138F3200DCA267 /* ContentView.swift in Sources */,
 				AC46F0582A13978B00DCA267 /* ChannelModels.swift in Sources */,
 				AC46F0492A138F3200DCA267 /* StreamGetterApp.swift in Sources */,
